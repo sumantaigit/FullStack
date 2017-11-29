@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<link rel="stylesheet" href="mystyles.css"/>
+<title>Demo HTML5</title>
+</head>
+<body>
+<p>Hello Mr</p>
+
+<form id="myform" >
+<label for="month-input">Please enter a month:</label>
+	<input type="month" id=month-input/><br/><br/>
+	<label for="date-input">Please choose a date:</label>
+	<input type="date" id=date-input/>
+	<label for="time-input">Please enter a time:</label>
+	<input type="time" id=time-input/><br/><br/>
+	<label for="week-input">Please enter a week:</label>
+	<input type="week" id=week-input/><br/><br/>
+	<label for="range-data">Range :</label>
+	<input type="range" id="range-data" min="1" max="10"><br/><br/>
+	<label for="search-data">Search:</label>
+	<input type="search" id=search-data placeholder="Enter Search term"/>
+	<input type="submitt" value="SUBMITT">
+	
+	<label for="list-data">Data list: </label>
+	<input type="text" list="myDataList">
+	<datalist id="myDataList">
+		<option lable="Mr." value="Mr."></option>
+		<option lable="Mrs." value="Mrs."></option>
+		<option lable="Ms." value="Ms."></option>
+	</datalist>
+</form>
+</body>
+</html>
