@@ -2,9 +2,9 @@ package com.org.sum.Core;
 
 public class RunnableLambda {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		
-		Runnable runnable = new Runnable() {
+		/*Runnable runnable = new Runnable() {
 			
 			@Override
 			public void run() {
@@ -17,10 +17,21 @@ public class RunnableLambda {
 				}
 				
 			}
+		};*/
+		
+//LambdaExpression starts here
+		Runnable runnablelambda = () -> {
+				for(int i = 0 ; i < 3 ;i++){
+					System.out.println(
+							"Hello World form Thread (" +Thread.currentThread().getName() + ")");
+							
+				}
 		};
 		
-		Thread t = new Thread(runnable);
+		Thread t = new Thread(runnablelambda);
 		t.start();
-	}
+		t.join();
+			}
+		};		
 
-}
+
