@@ -1,4 +1,4 @@
-package com.org.sum.Core;
+package com.capgemini.java8.lambdaExpression;
 
 import java.io.File;
 import java.io.FileFilter;
