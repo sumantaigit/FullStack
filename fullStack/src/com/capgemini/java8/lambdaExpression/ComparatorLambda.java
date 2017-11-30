@@ -25,9 +25,12 @@ public class ComparatorLambda {
 		List<String> list =Arrays.asList("**","***","*","****");
 		Collections.sort(list,compLambda);
 		
-		for(String s : list){
+		/*for(String s : list){
 		System.out.println(s);
-		}
+		}*/
+		
+		list.forEach(System.out::println);
+		
 	}
 
 }
